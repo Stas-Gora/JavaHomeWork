@@ -34,6 +34,9 @@ public class Calculator {
                 System.out.println("Ошибка. На ноль делить нельзя");
                 break;
             }
+        default:
+            System.out.println ("Ошибка ввода");
+            break;
             }
         }
     }
