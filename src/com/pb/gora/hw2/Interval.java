@@ -22,11 +22,7 @@ public class Interval {
         else if (x >=51&&x<= 100) {
             System.out.println("диапазон [51 - 100]");
         }
-        else if (x > 100) {
-            System.out.println("Ошибка. Выберитечисло из диапазона");
-        }
-        else if (x < 0) {
-            System.out.println("Ошибка. Выберитечисло из диапазона");
-        }
+        else {
+            System.out.println("ошибка");}
     }
 }
