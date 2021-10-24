@@ -23,27 +23,32 @@ public class Array {
 
         int num = 0;
         for (int i=0 ; i< mas.length; i++){
-            if (mas[i]>0 ){  // находим нечетные элементы
+            if (mas[i] >=0 ){
                 num++;
             }
         }
-        System.out.println("Количество элементов больше нуля  =  "+ num);
-
-        for (int element : mas)
-            num += element;
-        System.out.println("сумма всех элементов массива  =  "+ num);
+        System.out.println("Количество положительных чисел =  "+ num);
+        int sum = 0;
+        for  (int element : mas){
+        sum += element;
+        }
+            System.out.println("сумма всех элементов массива  =  " + sum);
 
         boolean isSorted = false;
         while (!isSorted) {
             isSorted = true;
-            for (int i=0 ; i< mas.length; i++)
-                if (mas[i] < mas[i + 1]) {
+            for (int i=0 ; i< mas.length - 1; i++)
+                if (mas[i] > mas[i + 1]) {
                     int temp = mas[i];
                     mas[i] = mas[i + 1];
                     mas[i + 1] = temp;
                     isSorted = false;
 
                 }
+            System.out.println("от меньшего к больщему");
+            for (int i=0;i < mas.length;i++){
+                System.out.print(mas[i]+ " ");
+            }
             }
         System.out.println();
         }
